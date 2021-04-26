@@ -181,7 +181,7 @@ WHERE (dept_name = 'Sales');
 SELECT ce.emp_no, ce.first_name, ce.last_name, d.dept_name
 --INTO Sales_info
 FROM current_emp AS ce
-INNER JOIN dept_emp as de
+INNER JOIN dept_emp as de 
 ON (ce.emp_no = de.emp_no)
 INNER JOIN departments as d
 ON (de.dept_no = d.dept_no)
